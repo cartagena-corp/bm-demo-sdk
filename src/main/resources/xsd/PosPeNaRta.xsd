@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified">
+    <xsd:element name="PosPeNaRta">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element type="xsd:string" name="IDETRX" />
+                <xsd:element type="xsd:string" name="CODAUT" />
+                <xsd:element type="xsd:string" name="CODRTA" />
+                <xsd:element type="xsd:string" name="MSGRTA" />
+                <xsd:element type="xsd:string" name="CliValido" />
+                <xsd:element name="Productos">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Creditos">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="Credito" maxOccurs="unbounded"
+                                                     minOccurs="0">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element type="xsd:string" name="TipPro" />
+                                                    <xsd:element type="xsd:string" name="NumProTot" />
+                                                    <xsd:element type="xsd:string" name="NumPro" />
+                                                    <xsd:element type="xsd:string" name="DesPro" />
+                                                    <xsd:element type="xsd:string" name="AliPro" />
+                                                    <xsd:element type="xsd:string" name="PagCuo" />
+                                                    <xsd:element type="xsd:string" name="PagTot" />
+                                                    <xsd:element type="xsd:string"
+                                                                 name="ValProxCuo" />
+                                                    <xsd:element type="xsd:string"
+                                                                 name="FecProxCuo" />
+                                                    <xsd:element type="xsd:string" name="IntMor" />
+                                                    <xsd:element type="xsd:string" name="DiasMor" />
+                                                    <xsd:element type="xsd:string" name="FecCort" />
+                                                    <xsd:element type="xsd:string" name="SaldoVen" />
+                                                    <xsd:element type="xsd:string" name="SalPag" />
+                                                    <xsd:element type="xsd:string" name="FecMaxPag" />
+                                                    <xsd:element type="xsd:string" name="EstCod" />
+                                                    <xsd:element type="xsd:string" name="EstOpe" />
+                                                    <xsd:element type="xsd:string" name="EstDes" />
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="Cuentas">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="Cuenta" maxOccurs="unbounded"
+                                                     minOccurs="0">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element type="xsd:string" name="TipPro" />
+                                                    <xsd:element type="xsd:string" name="NumProTot" />
+                                                    <xsd:element type="xsd:string" name="NumPro" />
+                                                    <xsd:element type="xsd:string" name="DesPro" />
+                                                    <xsd:element type="xsd:string" name="AliPro" />
+                                                    <xsd:element type="xsd:string" name="ValDis" />
+                                                    <xsd:element type="xsd:string" name="ValCan" />
+                                                    <xsd:element type="xsd:string" name="SalTot" />
+                                                    <xsd:element type="xsd:string" name="EstCod" />
+                                                    <xsd:element type="xsd:string" name="EstOpe" />
+                                                    <xsd:element type="xsd:string" name="EstDes" />
+                                                    <xsd:element type="xsd:string" name="TipOpe" />
+                                                    <xsd:element type="xsd:string" name="IntCaus" />
+                                                    <xsd:element type="xsd:string" name="IntRent" />
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="CDTs">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="CDT" maxOccurs="unbounded" minOccurs="0">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element type="xsd:string" name="TipPro" />
+                                                    <xsd:element type="xsd:string" name="NumProTot" />
+                                                    <xsd:element type="xsd:string" name="NumPro" />
+                                                    <xsd:element type="xsd:string" name="DesPro" />
+                                                    <xsd:element type="xsd:string" name="AliPro" />
+                                                    <xsd:element type="xsd:string" name="FecVen" />
+                                                    <xsd:element type="xsd:string" name="ValApe" />
+                                                    <xsd:element type="xsd:string" name="ProxVencim" />
+                                                    <xsd:element type="xsd:string" name="TasPac" />
+                                                    <xsd:element type="xsd:string" name="Period" />
+                                                    <xsd:element type="xsd:string" name="Instruc" />
+                                                    <xsd:element type="xsd:string" name="EstCod" />
+                                                    <xsd:element type="xsd:string" name="EstOpe" />
+                                                    <xsd:element type="xsd:string" name="EstDes" />
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="Rotativos">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="Rotativo" maxOccurs="unbounded"
+                                                     minOccurs="0">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element type="xsd:string" name="TipPro" />
+                                                    <xsd:element type="xsd:string" name="NumProTot" />
+                                                    <xsd:element type="xsd:string" name="NumPro" />
+                                                    <xsd:element type="xsd:string" name="DesPro" />
+                                                    <xsd:element type="xsd:string" name="AliPro" />
+                                                    <xsd:element type="xsd:string" name="SaldoCr" />
+                                                    <xsd:element type="xsd:string" name="UtilizaCr" />
+                                                    <xsd:element type="xsd:string" name="FecCortCr" />
+                                                    <xsd:element type="xsd:string" name="ProxCuoCr" />
+                                                    <xsd:element type="xsd:string" name="FecVenCr" />
+                                                    <xsd:element type="xsd:string"
+                                                                 name="ValProxCuoCr" />
+                                                    <xsd:element type="xsd:string" name="EstCod" />
+                                                    <xsd:element type="xsd:string" name="EstOpe" />
+                                                    <xsd:element type="xsd:string" name="EstDes" />
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element type="xsd:string" name="RFNUM4" />
+                <xsd:element type="xsd:string" name="RFNUM5" />
+                <xsd:element type="xsd:string" name="RFNUM6" />
+                <xsd:element type="xsd:string" name="RFTXT4" />
+                <xsd:element type="xsd:string" name="RFTXT5" />
+                <xsd:element type="xsd:string" name="RFTXT6" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xsd:element name="PosPeNa">
+        <xsd:complexType>
+            <xsd:sequence>
+                <!-- Cabecera -->
+                <xsd:element type="xsd:string" name="IDETRX"/>
+                <xsd:element type="xsd:string" name="FECHOR"/>
+                <xsd:element type="xsd:string" name="CODADQ"/>
+                <!-- Datos del cliente -->
+                <xsd:element type="xsd:string" name="CODEST"/>
+                <xsd:element type="xsd:string" name="CODTER"/>
+                <!-- Parámetros del servicio -->
+                <xsd:element type="xsd:string" name="TipIdNat"/>
+                <xsd:element type="xsd:string" name="NumIdNat"/>
+                <xsd:element type="xsd:string" name="TipBca"/>
+                <xsd:element type="xsd:string" name="TipPer"/>
+                <xsd:element type="xsd:string" name="DirIpC"/>
+                <!-- Parámetros para uso futuro -->
+                <xsd:element type="xsd:string" name="RFNUM1"/>
+                <xsd:element type="xsd:string" name="RFNUM2"/>
+                <xsd:element type="xsd:string" name="RFNUM3"/>
+                <xsd:element type="xsd:string" name="RFTXT1"/>
+                <xsd:element type="xsd:string" name="RFTXT2"/>
+                <xsd:element type="xsd:string" name="RFTXT3"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
