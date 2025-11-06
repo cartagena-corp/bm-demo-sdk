@@ -17,8 +17,9 @@ Este comando compilará el proyecto, ejecutará las pruebas y empaquetará el SD
    - demo-nsbt-sdk-1.0.3.pom
 
 2. Instálalos en tu repositorio Maven local ejecutando:
-
+```bash
    mvn install:install-file -Dfile=demo-nsbt-sdk-1.0.3.jar -DpomFile=demo-nsbt-sdk-1.0.3.pom
+```
 
 3. En el pom.xml de tu proyecto agrega la dependencia:
 
